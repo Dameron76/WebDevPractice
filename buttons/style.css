@@ -1,0 +1,13 @@
+.test {
+	background-color: rgb(200, 200, 200);
+	padding: 10px;
+}
+
+.test button {
+	margin: 0 10px 0 4px;
+	padding: 10px;
+}
+
+#first-button{
+	background-color: rgb(200, 100, 100);
+}
