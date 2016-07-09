@@ -19,11 +19,13 @@ body {
 	font-size: 1em;
 	font-weight: bold;
 	box-shadow: 1px 3px 1px 1px rgba(0,0,0,0.5);
+	transition: 0.3s;
 }
 
 .test button:active {
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	transform: translateY(3px);
+	transition: none;
 }
 
 #first-button {
@@ -40,6 +42,8 @@ body {
 	background-color: rgb(0%, 85%, 10%);
 }
 #second-button span {
+	position: relative;
+	right: -10px;
 	transition: 0.5s;
 }
 #second-button:hover span {
@@ -47,7 +51,7 @@ body {
 	transition: 0.5s;
 }
 #second-button span:after {
-	content: '»';
+	content: ' »';
 	opacity: 0;
 	transition: 0.5s;
 }
