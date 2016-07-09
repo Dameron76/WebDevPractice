@@ -14,9 +14,10 @@ body {
 	border: 1px solid black;
 	border-radius: 5px;
 	outline: none;
-	width: 75px;
 	cursor: pointer;
-	font
+	font-family: Verdana;
+	font-size: 1em;
+	font-weight: bold;
 	box-shadow: 2px 3px 1px 1px rgba(0,0,0,0.5);
 }
 
