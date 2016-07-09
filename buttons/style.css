@@ -39,17 +39,21 @@ body {
 #second-button:hover {
 	background-color: rgb(0%, 85%, 10%);
 }
+#second-button span {
+	transition: 0.5s;
+}
 #second-button:hover span {
 	padding-right: 20px;
 	transition: 0.5s;
 }
-
 #second-button span:after {
 	content: '»';
 	opacity: 0;
+	transition: 0.5s;
 }
 #second-button:hover span:after {
 	opacity: 1;
+	transition: 0.5s;
 }
 
 
