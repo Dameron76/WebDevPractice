@@ -22,7 +22,7 @@ body {
 }
 
 .test button:active {
-	box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	transform: translateY(3px);
 }
 
@@ -35,15 +35,21 @@ body {
 #second-button {
 	width: 120px;
 	background-color: rgb(0%, 80%, 20%);
-	transition: all 0.5s;
 }
-#second-button:hover { 
+#second-button:hover {
 	background-color: rgb(0%, 85%, 10%);
+}
+#second-button:hover span {
+	padding-right: 20px;
 	transition: 0.5s;
 }
-#second-button:hover span:after { 
-	content: ' »';
-	transition: 0.5s;
+
+#second-button span:after {
+	content: '»';
+	opacity: 0;
+}
+#second-button:hover span:after {
+	opacity: 1;
 }
 
 
