@@ -1,10 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-size: 100%;
+
 }
 
 .test {
 	background-color: rgb(200, 200, 200);
-	padding: 10px;
+	padding: 20px;
 }
 
 .test button {
@@ -19,7 +24,7 @@ body {
 	font-size: 1em;
 	font-weight: bold;
 	box-shadow: 1px 3px 1px 1px rgba(0,0,0,0.5);
-	transition: 0.3s;
+	transition: 0.15s;
 }
 
 .test button:active {
@@ -28,12 +33,23 @@ body {
 	transition: none;
 }
 
+.tooltip-button {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip-button:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* First Button */
 #first-button {
 	background-color: rgb(90%, 25%, 25%);
 }
 #first-button:hover { background-color: rgb(100%, 0%, 0%); }
 
-
+/* Second Button */
 #second-button {
 	width: 120px;
 	background-color: rgb(0%, 80%, 20%);
@@ -60,8 +76,43 @@ body {
 	transition: 0.5s;
 }
 
-
+/* Third Button */
 #third-button {
+	position: relative;
 	background-color: rgb(25%, 25%, 90%);
 }
 #third-button:hover { background-color: rgb(0%, 0%, 100%); }
+
+/* Tooltip Text */
+.tooltip {
+	font-family: Ariel;
+	color: black;
+	width: 240px;
+	background-color: rgb(60%, 60%, 80%);
+	border: 1px solid black;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 5px 10px;
+	position: absolute;
+	z-index: 1;
+	left: 12px;
+	top: 50px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.tooltip::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 10%;
+	margin-left: -5px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+
+/*
+third button show hidden tooltip on hover
+*/
