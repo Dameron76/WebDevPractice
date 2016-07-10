@@ -8,8 +8,8 @@
 <body>
 	<h1>Fancy dropdowns using CSS stylings</h1>
 
-	<div class="dropdown">
-		<button onclick="toggleDisplay(this)" class="dropbtn">Click Me</button>
+	<div onfocusin="toggleDisplay()" onfocusout="toggleDisplay()" class="dropdown">
+		<button class="dropbtn">Click Me</button>
 		<div id="myDropdown" class="dropdown-content">
 			<a href="#">Link 1</a>
 			<a href="#">Link 2</a>
@@ -27,9 +27,10 @@
 	</div>
 
 	<script>
-		function toggleDisplay(target) {
-			target.classList.toggle("show");
+		function toggleDisplay() {
+			event.currentTarget.classList.toggle("show");
 		}
 	</script>
+
 </body>
 </html>
