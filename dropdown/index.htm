@@ -7,6 +7,16 @@
 </head>
 <body>
 	<h1>Fancy dropdowns using CSS stylings</h1>
+
+	<div class="dropdown">
+		<button onclick="toggleDisplay(this)" class="dropbtn">Click Me</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</div>
+
 	<div>
 		<ul id="nav">
 			<li><a href="#" class="nav-button">Home</a></li>
@@ -15,5 +25,11 @@
 			<li><a href="#" class="nav-button">Contact Me</a></li>
 		</ul>
 	</div>
+
+	<script>
+		function toggleDisplay(target) {
+			target.classList.toggle("show");
+		}
+	</script>
 </body>
 </html>
