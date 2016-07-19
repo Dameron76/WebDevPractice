@@ -43,15 +43,7 @@
 	background-color: #668;
 }
 
+/* show the dropdown menu */
 .show .dropdown-content{
 	display: block;
-}
-
-#nav {
-	list-style: none;
-}
-
-#nav li {
-	float: left;
-	margin: 0 10px;
 }
