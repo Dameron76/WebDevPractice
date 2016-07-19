@@ -14,6 +14,8 @@ Basic repository management
 	git status 				displays what needs to be added or committed
 	
 	git add [file name] 			adds files to staging
+
+	git add -A 				adds all files in current folder to staging
 	
 	git commit -m "message" 		commit changes to head with a message
 
